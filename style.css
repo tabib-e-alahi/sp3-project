@@ -1,0 +1,33 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*================ header styles ------------------ */
+.bg-class{
+    background-image: url("./images/hero-bg.png");
+    
+}
+.my-header-banner-title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: #f60;
+}
+
+.my-header-description{
+    font-weight: 600;
+    font-family: var(--e-global-typography-accent-font-family ),Sans-serif;
+}
+
+.my-nav-items:hover{
+    font-size: 25px;
+    color: rgb(231, 115, 115);
+    
+}
+.my-nav:hover{
+    font-size: 20px;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 0px 1px royalblue;
+}
+

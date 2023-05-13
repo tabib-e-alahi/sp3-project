@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- bootstrap css file  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="mx-md-5">
+    <header class="bg-black bg-class">
+
+      <!-- ====================navbar section ---------------------- -->
+      <nav class="navbar navbar-expand-lg w-md-75 mx-auto mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo.png"
+              alt="Logo"
+              width="35"
+              height="27"
+              class="d-inline-block align-text-top"
+            />
+            <span class="fw-bolder text-warning fs-3">BrainWave</span>
+          </a>
+
+          <button
+            class="navbar-toggler bg-body-secondary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold mx-auto border border-lg rounded-3 border-warning my-nav ps-4 ps-md-0"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link me-md-2 active text-light my-nav-items active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-2 text-light my-nav-items" href="#"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-2 text-light my-nav-items" href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light my-nav-items" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light my-nav-items" href="#"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+
+            <!-- Button which will be clicked for  modal -->
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Free Consultation
+            </button>
+
+            <!-- Modal for free consultant-->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Offer
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    You will get a 3 weeks trial.Start Your Free Trial.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-success">Start</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!---------------------======== header banner ------------------------------ -->
+      <div>
+        <div
+          class="w-75 mx-auto d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center mt-5 gap-5 gap-md-3"
+        >
+          <div class="w-md-50 text-light">
+            <h1 class="my-header-banner-title">Make Design</h1>
+            <p class="w-75 my-header-description mb-md-4 text-light fs-6">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority
+            </p>
+            <button class="btn btn-danger px-4 py-2">Read More</button>
+          </div>
+          <div>
+            <img class="w-100 my-header-banner-image" src="./images/hero.png" alt=""/>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="">
+      <!-- about section ------------------------------------- -->
+      <div>
+        <div
+          class="mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 gap-md-3"
+        >
+          <div
+            class="w-75 mx-auto d-flex justify-content-center align-items-center pt-5"
+          >
+            <img class="w-75 mx-auto" src="./images/about-img.png" alt="" />
+          </div>
+
+          <div class="w-75">
+            <h2 class="my-header-banner-title text-success fs-1">About Us</h2>
+            <p class="w-75 my-header-description mb-md-4 fs-6">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Voluptas, nesciunt?
+            </p>
+            <button class="btn btn-danger px-4 py-2">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- what we do section ---========================================== -->
+
+      <div class="mt-5 bg-body-secondary rounded-4 pb-3 pt-3 mb-5">
+      <h2 class="text-center mb-5 fw-bolder">What we do</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-4 g-4 w-75 mx-auto mb-5">
+
+          <div class="col">
+            <div class="card text-light bg-danger text-center">
+              <img src="./images/idea.png" class="card-img-top w-25 mx-auto h-50 pt-3 pb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Original Ideas</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by the readable content</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-success text-center text-light">
+              <img src="./images/controller.png" class="card-img-top w-25 mx-auto h-50 pt-2  pb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Great apps</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by the readable content</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card bg-danger text-center text-light">
+              <img src="./images/envelope.png" class="card-img-top w-25 mx-auto h-50 pt-4 pb-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fast Loading</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by the readable content</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-success text-center text-light">
+              <img src="./images/rocket-ship.png" class="card-img-top w-25 mx-auto h-50 pt-3 pb-1" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fast Loading</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by the readable content</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- bootstrap js file  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
