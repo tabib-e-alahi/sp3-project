@@ -44,5 +44,108 @@ html{
     text-align: justify;
 }
 
+/* testing files  */
+
+.my-img{
+    height:150px;
+    width:100%;
+  }
+  
+  /* .my-div{
+    padding-left:5px;
+    padding-right:5px;
+  } */
+.my-card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+
+  
+  
+  .my-card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .my-card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .my-card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .my-card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .my-card-text{
+    height:80px;  
+  }
+  
+  .my-card::before, .my-card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .my-card::before {
+    transform-origin: left top;
+  }
+  .my-card::after {
+    transform-origin: right bottom;
+  }
+  .my-card:hover::before, .my-card:hover::after, .my-card:focus::before, .my-card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+  /* end here  */
+
+  /* new test files  */
+  /* body {
+    padding: 2em;
+  }
+  .card {
+    border: none;
+  }
+  img,
+  .card-img-top {
+    border-radius: 0em;
+  }
+  
+  @media (min-width: 576px) {
+    .card-columns {
+      column-count: 2;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .card-columns {
+      column-count: 3;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card-columns {
+      column-count: 4;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card-columns {
+      column-count: 5;
+    }
+  } */
+  
+  /* end here  */
 
 
