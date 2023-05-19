@@ -1,47 +1,43 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-
 
 /*================ header styles ------------------ */
-.bg-class{
-    background-image: url("./images/hero-bg.png");
-    
+.bg-class {
+  background-image: url("./images/hero-bg.png");
 }
-.my-header-banner-title{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 70px;
-    font-weight: 900;
-    color: #f60;
-}
-
-.my-header-description{
-    font-weight: 600;
-    font-family: var(--e-global-typography-accent-font-family ),Sans-serif;
+.my-header-banner-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  color: #f60;
 }
 
-.my-nav-items:hover{
-    font-size: 25px;
-    color: rgb(231, 115, 115);
-    
-}
-.my-nav:hover{
-    font-size: 20px;
-    padding: 5px 15px;
-    box-shadow: 0px 0px 0px 1px royalblue;
+.my-header-description {
+  font-weight: 600;
+  font-family: var(--e-global-typography-accent-font-family), Sans-serif;
 }
 
-.card-shadow{
-    box-shadow:0px 0px 15px 0px rgb(4, 4, 4);
+.my-nav-items:hover {
+  font-size: 25px;
+  color: rgb(231, 115, 115);
+}
+.my-nav:hover {
+  font-size: 20px;
+  padding: 5px 15px;
+  box-shadow: 0px 0px 0px 1px royalblue;
 }
 
+.card-shadow {
+  box-shadow: 0px 0px 15px 0px rgb(4, 4, 4);
+}
 
 /* portfolio styles ------------------------------------------ */
 
 /* testimonial  */
 
-.testimonial-text{
-    text-align: justify;
+.testimonial-text {
+  text-align: justify;
 }
 /* {
     background-image: url("./images/hero-bg.png");
@@ -49,107 +45,71 @@ html{
 
 /* testing files  */
 
-.my-img{
-    height:150px;
-    width:100%;
-  }
-  
-.card-heading-class:hover{
-    background-color: rgb(200, 161, 89);
+.my-img {
+  height: 150px;
+  width: 100%;
 }
-.my-card{
-    background-color: #F290C2;
-    transition:0.5s;
-    cursor:pointer;
-  }
-  
 
-  
-  
-  .my-card-title{  
-    font-size:15px;
-    transition:1s;
-    cursor:pointer;
-  }
-  .my-card-title i{  
-    font-size:15px;
-    transition:1s;
-    cursor:pointer;
-    color:#ffa710
-  }
-  .my-card-title i:hover{
-    transform: scale(1.25) rotate(100deg); 
-    color:#18d4ca;
-    
-  }
-  .my-card:hover{
-    transform: scale(1.05);
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-  }
-  .my-card-text{
-    height:80px;  
-  }
-  
-  .my-card::before, .my-card::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: scale3d(0, 0, 1);
-    transition: transform .3s ease-out 0s;
-    background: rgba(255, 255, 255, 0.1);
-    content: '';
-    pointer-events: none;
-  }
-  .my-card::before {
-    transform-origin: left top;
-  }
-  .my-card::after {
-    transform-origin: right bottom;
-  }
-  .my-card:hover::before, .my-card:hover::after, .my-card:focus::before, .my-card:focus::after {
-    transform: scale3d(1, 1, 1);
-  }
+.card-heading-class:hover {
+  background-color: rgb(200, 161, 89);
+}
+.my-card {
+  background-color: #f290c2;
+  transition: 0.5s;
+  cursor: pointer;
+}
 
-  /* end here  */
+.my-card-title {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+.my-card-title i {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  color: #ffa710;
+}
+.my-card-title i:hover {
+  transform: scale(1.25) rotate(100deg);
+  color: #18d4ca;
+}
+.my-card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.my-card-text {
+  height: 80px;
+}
 
-  /* new test files  */
-  /* body {
-    padding: 2em;
-  }
-  .card {
-    border: none;
-  }
-  img,
-  .card-img-top {
-    border-radius: 0em;
-  }
-  
-  @media (min-width: 576px) {
-    .card-columns {
-      column-count: 2;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .card-columns {
-      column-count: 3;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .card-columns {
-      column-count: 4;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .card-columns {
-      column-count: 5;
-    }
-  } */
-  
-  /* end here  */
+.my-card::before,
+.my-card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+.my-card::before {
+  transform-origin: left top;
+}
+.my-card::after {
+  transform-origin: right bottom;
+}
+.my-card:hover::before,
+.my-card:hover::after,
+.my-card:focus::before,
+.my-card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
 
+/* end here  */
 
+.my-bg-contact {
+  background-color:rgb(28, 12, 12);
+}
