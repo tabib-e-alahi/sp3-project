@@ -43,6 +43,9 @@ html{
 .testimonial-text{
     text-align: justify;
 }
+/* {
+    background-image: url("./images/hero-bg.png");
+} */
 
 /* testing files  */
 
@@ -51,14 +54,15 @@ html{
     width:100%;
   }
   
-  /* .my-div{
-    padding-left:5px;
-    padding-right:5px;
-  } */
+.card-heading-class:hover{
+    background-color: rgb(200, 161, 89);
+}
 .my-card{
+    background-color: #F290C2;
     transition:0.5s;
     cursor:pointer;
   }
+  
 
   
   
