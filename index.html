@@ -18,10 +18,11 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="mx-md-5">
-    <header class="bg-black bg-class">
+  <body class="">
+    <!-- header section ++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <header class=" bg-class mx-md-5 pb-md-5">
       <!-- ====================navbar section ---------------------- -->
-      <nav class="navbar navbar-expand-lg w-md-75 mx-auto mb-5">
+      <nav class="navbar navbar-expand-lg w-md-75 mx-auto mb-5 sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -59,7 +60,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link me-md-2 text-light my-nav-items" href="#"
+                <a class="nav-link me-md-2 text-light my-nav-items" href=""
                   >About</a
                 >
               </li>
@@ -76,12 +77,15 @@
                   >Contact us</a
                 >
               </li>
+              <li class="nav-item">
+                <a class="nav-link text-light my-nav-items" href="#">Login</a>
+              </li>
             </ul>
 
             <!-- Button which will be clicked for  modal -->
             <button
               type="button"
-              class="btn btn-danger"
+              class="btn btn-danger px-md-4 my-offer-btn"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
@@ -143,7 +147,7 @@
       <!---------------------======== header banner ------------------------------ -->
       <div>
         <div
-          class="w-75 mx-auto d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center mt-5 gap-5 gap-md-3"
+          class="w-75 mx-auto d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center mt-5 gap-5 gap-md-3 "
         >
           <div class="w-md-50 text-light">
             <h1 class="my-header-banner-title">Make Design</h1>
@@ -151,15 +155,9 @@
               There are many variations of passages of Lorem Ipsum available,
               but the majority
             </p>
-            <button
-              class="btn btn-danger px-4 py-2"
-              data-bs-toggle="modal"
-              data-bs-target="#modalCentered"
-            >
-              Read More
-            </button>
+            <button class="btn btn-danger px-4 py-2">Make Appointment</button>
           </div>
-          
+
           <div>
             <img
               class="w-100 my-header-banner-image"
@@ -171,9 +169,12 @@
       </div>
     </header>
 
-    <main class="">
-      <!-- about section ------------------------------------- -->
-      <div class="mb-5">
+    <!-- toast section ---------- -->
+
+    <!-- main section ++++++++++++_____________+++++++++++++==================== -->
+    <main class="mx-md-5">
+      <!-- about section ------------------------------------- -===============================-->
+      <div class="mb-5 mt-md-5">
         <div class="row mx-1">
           <div class="col-sm-12 col-md-6">
             <img class="img-fluid" src="./images/about-img.png" alt="" />
@@ -186,20 +187,26 @@
               but the majority Lorem ipsum dolor sit amet consectetur,
               adipisicing elit. Voluptas, nesciunt?
             </p>
-            <button class="btn btn-danger px-4 py-2">Read More</button>
+            <button
+              class="btn btn-danger px-4 py-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalCentered"
+            >
+              Read More
+            </button>
           </div>
         </div>
       </div>
 
-
-     
-      <!-- our working sectors  -->
+      <!-- our working sectors ============================================================ -->
       <section class="mb-5">
         <div class="container mt-2">
           <div
             class="card card-block mb-2 mb-md-5 row col-sm-3 col-md-6 mx-auto card-heading-class"
           >
-            <h4 class="card-title text-center text-black fw-bolder">Our Working Sectors</h4>
+            <h4 class="card-title text-center text-black fw-bolder">
+              Our Working Sectors
+            </h4>
 
             <p class="card-text text-center fw-semibold">
               Welcome to Tab&&Tanzz Designing Complex
@@ -355,20 +362,24 @@
           </div>
         </div>
 
-       <div class="w-25 mx-auto mt-3">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-       </div>
+        <div class="w-25 mx-md-auto mt-3">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
       </section>
 
-      <!-- what choose us---========================================== -->
+      <!-- why choose us---========================================== -->
 
       <div class="mt-5 bg-body-secondary rounded-4 pb-3 pt-3 mb-5">
         <h2 class="text-center mb-5 fw-bolder">Why choose us?</h2>
@@ -444,6 +455,8 @@
         </div>
       </div>
 
+      <!-- modal for read more section ---------------------------------------------- -->
+
       <div
         class="modal fade"
         id="modalCentered"
@@ -505,7 +518,6 @@
       </div>
 
       <section>
-        <!--Section: Contact v.2-->
         <section
           class="mb-4 container border border-lg rounded-3 my-bg-contact ps-md-4 text-white"
         >
@@ -628,6 +640,99 @@
         </section>
       </section>
     </main>
+
+    <!-- footer section +++++++++++++++++++++++++++++++++++++++++++++++++++=== -->
+    <footer>
+      <section class="bg-black pb-md-4">
+        <div
+          class="text-light d-flex px-2 mx-md-5 pt-5 justify-content-center row row-cols-2 row-cols-lg-4"
+        >
+          <!-- 1st justice div  -->
+          <div class="col">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <img
+                src="./images/logo.png"
+                alt="Logo"
+                width="35"
+                height="27"
+                class="d-inline-block align-text-top"
+              />
+              <span class="fw-bolder text-warning fs-3">Tab&Tanzz</span>
+            </div>
+
+            <p class="text-light-emphasis text-start">
+              There are many variations<br />
+              of passages of Lorem Ipsum<br />
+              available, but the majority<br />
+              have suffered alteration<br />
+              in some form, by injected humour.
+            </p>
+          </div>
+
+          <!-- useful link nav  -->
+          <div class="col">
+            <h5 class="ps-3">Useful Link</h5>
+            <ul class="nav flex-column pt-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light-emphasis"
+                  aria-current="page"
+                  href="#"
+                  >Homes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light-emphasis" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light-emphasis" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light-emphasis" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light-emphasis" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- contact now info    -->
+          <div class="col">
+            <h5 class="pb-3">Contact Now</h5>
+            <ul class="text-light-emphasis" type="none">
+              <li class="">House 07, Road 14D, Uttara North</li>
+              <li class="mb-2">Dhaka 1230, BD</li>
+              <li class="">+880 1744 552 446</li>
+              <li class="mb-2">+880 1744 552 446</li>
+              <li class="">ahmed15-4562@diu.edu.bd</li>
+              <li>tabib15-4590@diu.edu.bd</li>
+            </ul>
+          </div>
+
+          <!-- subscribe section  -->
+          <div class="col">
+            <h5 class="pb-3">Subscribe</h5>
+            <p class="pb-3 text-light-emphasis">
+              Subscribe for our latest & Articles. We Won’t Give You Spam Mails
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email Address"
+                aria-label="Email Address"
+                aria-describedby="basic-addon2"
+              />
+              <span
+                class="input-group-text bg-warning-subtle mx-auto"
+                id="basic-addon2"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
 
     <!-- bootstrap js file  -->
     <script
