@@ -16,6 +16,10 @@ body{
   /* background-image: url("./images/hero-bg.png"); */
 background-color: #04091D;
 }
+.my-nav-bg{
+  /* backdrop-filter: blur(50px); */
+  background-color: #04091D;
+}
 .my-header-banner-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 70px;
@@ -27,6 +31,7 @@ background-color: #04091D;
   font-weight: 600;
   font-family: var(--e-global-typography-accent-font-family), Sans-serif;
 }
+
 
 .my-nav-items:hover {
   font-weight: bold;
